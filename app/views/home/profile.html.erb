@@ -1,0 +1,114 @@
+<%# <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile | CycleCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen items-center justify-center bg-gray-100">
+
+  <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+    
+    <!-- Profile Header -->
+    <div class="text-center">
+      <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-pink-100 flex items-center justify-center text-3xl text-pink-600 font-bold">
+        🩷
+      </div>
+      <h2 class="text-2xl font-semibold text-gray-900">User Profile</h2>
+      <p class="text-gray-600 text-sm">Manage your cycle details easily</p>
+    </div>
+
+    <!-- Profile Details Form -->
+    <form class="mt-6 space-y-4">
+      <div>
+        <label class="block text-gray-700 font-medium">Full Name</label>
+        <input type="text" placeholder="Enter your name"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium">Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium">Period Start Date</label>
+        <input type="date"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium">Period End Date</label>
+        <input type="date"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium">Cycle Length (Days)</label>
+        <input type="number" placeholder="e.g., 28"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <!-- Update Profile Button -->
+      <button type="submit"
+        class="w-full px-4 py-2 mt-4 text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+        Save Changes
+      </button>
+    </form>
+  </div>
+
+</body>
+</html> %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Form | CycleCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen items-center justify-center bg-gray-100">
+
+  <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+    
+    <!-- Form Header -->
+    <div class="text-center">
+      <h2 class="text-2xl font-semibold text-gray-900">Add Care Note</h2>
+      <p class="text-gray-600 text-sm">Track your care details easily</p>
+    </div>
+
+    <!-- Care Form -->
+    <form class="mt-6 space-y-4">
+
+     <div>
+        <label class="block text-gray-700 font-medium">Title</label>
+        <input type="text" placeholder="Title"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+      <!-- Tag Field -->
+      <div>
+        <label class="block text-gray-700 font-medium">Tag</label>
+        <input type="text" placeholder="e.g., Nutrition, Exercise, Mood"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" />
+      </div>
+
+      <!-- Body Field -->
+      <div>
+        <label class="block text-gray-700 font-medium">Body</label>
+        <textarea placeholder="Enter details..."
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 h-24"></textarea>
+      </div>
+
+      <!-- Add Button -->
+      <button type="submit"
+        class="w-full px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+        Add Care Note
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>

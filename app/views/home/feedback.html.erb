@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form | CycleCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen items-center justify-center bg-gray-100 p-4">
+
+  <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+    
+    <!-- Form Header -->
+    <div class="text-center">
+      <h2 class="text-2xl font-semibold text-gray-900">Submit Feedback</h2>
+      <p class="text-gray-600 text-sm">Help us improve your experience</p>
+    </div>
+
+    <!-- Feedback Form -->
+    <form class="mt-6 space-y-4">
+
+      <!-- Title Field -->
+      <div>
+        <label class="block text-gray-700 font-medium">Title</label>
+        <input type="text" placeholder="Enter a short title"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required />
+      </div>
+
+      <!-- Body Field -->
+      <div>
+        <label class="block text-gray-700 font-medium">Feedback</label>
+        <textarea placeholder="Write your feedback here..."
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 h-24" required></textarea>
+      </div>
+
+      <!-- Rating Field -->
+      <div>
+        <label class="block text-gray-700 font-medium">Rating</label>
+        <select class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required>
+          <option value="" disabled selected>Select a rating</option>
+          <option value="5">⭐️⭐️⭐️⭐️⭐️ - Excellent</option>
+          <option value="4">⭐️⭐️⭐️⭐️ - Good</option>
+          <option value="3">⭐️⭐️⭐️ - Average</option>
+          <option value="2">⭐️⭐️ - Needs Improvement</option>
+          <option value="1">⭐️ - Poor</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+        Submit Feedback
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>

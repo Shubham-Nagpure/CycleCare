@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :profiles
   resources :notifications
   resources :feedbacks
+
 end
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | CycleCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen items-center justify-center bg-gray-100">
+  
+  <div class="w-full max-w-md p-8 space-y-6 bg-white shadow-lg rounded-lg relative">
+    
+    <!-- Back Button (Top-Left) -->
+    <button class="absolute top-4 left-4 text-gray-600 hover:text-gray-900 transition">
+      ← Back
+    </button>
+
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-gray-900">Welcome Back</h2>
+      <p class="text-gray-600 text-sm">
+        Log in to access your account
+      </p>
+    </div>
+
+    <form class="space-y-4">
+      <div>
+        <label class="block text-gray-700 font-medium">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+        />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium">Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+        />
+      </div>
+      <div class="flex justify-between items-center">
+        <label class="flex items-center text-gray-700">
+          <input type="checkbox" class="mr-2" />
+          Remember me
+        </label>
+        <a href="#" class="text-indigo-600 hover:underline text-sm">
+          Forgot password?
+        </a>
+      </div>
+
+      <!-- Sign In Button -->
+      <button
+        type="submit"
+        class="w-full px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-gray-900 transition duration-300"
+      >
+        Sign In
+      </button>
+    </form>
+
+    <p class="text-center text-gray-600 text-sm">
+      Don't have an account? 
+      <a href="#" class="text-black hover:underline">Sign up</a>
+    </p>
+  </div>
+
+</body>
+</html>

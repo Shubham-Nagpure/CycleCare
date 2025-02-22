@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CycleCare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+</head>
+<body class="bg-pink-50 text-gray-900">
+
+  <!-- Navigation -->
+  <header class="px-6 lg:px-12 h-20 flex items-center justify-between bg-white shadow-md">
+    <a class="flex items-center text-2xl font-bold text-pink-600" href="#">
+      🌸 CycleCare
+    </a>
+    <nav class="hidden md:flex space-x-6">
+      <a class="hover:text-pink-600" href="#features">Features</a>
+      <a class="hover:text-pink-600" href="#benefits">Benefits</a>
+      <a class="hover:text-pink-600" href="#testimonials">Testimonials</a>
+      <a class="hover:text-pink-600" href="#download">Download</a>
+    </nav>
+    <a href="#" class="px-5 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700">Get Started</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="w-full py-24 text-center bg-gradient-to-r from-pink-400 to-pink-600 text-white">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-5xl font-bold leading-tight">Track & Manage Your Periods with Ease</h1>
+      <p class="mt-4 text-lg">Never miss a cycle, get health insights, and take control of your well-being.</p>
+      <div class="mt-6 space-x-4">
+        <a href="#" class="px-6 py-3 bg-white text-pink-600 rounded-lg hover:bg-gray-200">Get Started</a>
+        <a href="#" class="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-pink-600">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="w-full py-24 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold">Key Features</h2>
+      <div class="grid gap-12 mt-10 sm:grid-cols-3">
+        <div class="flex flex-col items-center">
+          <div class="h-12 w-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-lg">📅</div>
+          <h3 class="mt-4 text-xl font-semibold">Period Tracking</h3>
+          <p class="text-gray-600">Log your cycles and predict future periods.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="h-12 w-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-lg">⚠️</div>
+          <h3 class="mt-4 text-xl font-semibold">Missed Cycle Alerts</h3>
+          <p class="text-gray-600">Receive timely reminders and health tips.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="h-12 w-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-lg">🩺</div>
+          <h3 class="mt-4 text-xl font-semibold">Health Insights</h3>
+          <p class="text-gray-600">Get recommendations for a healthier cycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="w-full py-24 bg-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center">Why Choose CycleCare?</h2>
+      <div class="grid gap-12 mt-10 sm:grid-cols-2">
+        <div>
+          <h3 class="text-2xl font-bold text-pink-600">For Women</h3>
+          <ul class="mt-4 space-y-2 text-gray-700">
+            <li>✔ Accurate period predictions</li>
+            <li>✔ Health insights based on symptoms</li>
+            <li>✔ Personalized reminders</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-pink-600">For Health Tracking</h3>
+          <ul class="mt-4 space-y-2 text-gray-700">
+            <li>✔ AI-based health analysis</li>
+            <li>✔ Custom cycle tracking</li>
+            <li>✔ Share reports with your doctor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="w-full py-24 bg-pink-600 text-white text-center">
+    <h2 class="text-4xl font-bold">Ready to Take Control?</h2>
+    <p class="mt-4">Join thousands of women tracking their cycles effortlessly.</p>
+    <form class="mt-6 max-w-md mx-auto flex">
+      <%# <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 text-gray-900 bg-white rounded-l-lg focus:ring-pink-500" />
+      #<button class="px-6 py-3 bg-white text-pink-600 rounded-r-lg hover:bg-gray-200 text-sm">Sign Up</button> %>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 bg-white text-center text-gray-600 border-t">
+    <p>© 2025 CycleCare. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
