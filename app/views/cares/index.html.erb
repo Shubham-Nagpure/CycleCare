@@ -1,0 +1,17 @@
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+  <div class="w-full max-w-md space-y-4">
+
+    <% @cares.each do |care| %>
+      <!-- Sample Care Note Card -->
+      <div class="bg-white shadow-lg rounded-lg p-4 border-l-4 border-pink-500">
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-semibold text-pink-600 bg-pink-100 px-2 py-1 rounded-md"><%= care.tag %></span>
+          <span class="text-xs text-gray-500"><%= care.title %></span>
+        </div>
+        <p class="mt-2 text-gray-800 text-sm">
+          <%= care.body %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</body>

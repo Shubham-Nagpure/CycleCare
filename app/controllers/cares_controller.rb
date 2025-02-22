@@ -14,7 +14,7 @@ class CaresController < ApplicationController
   end
 
   def create
-    care.create(params)
+    Care.create(params)
   end
 
   def edit
